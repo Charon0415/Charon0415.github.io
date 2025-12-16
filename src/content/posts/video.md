@@ -1,8 +1,8 @@
 ---
-title: Include Video in the Posts
-published: 2022-08-01
-description: This post demonstrates how to include embedded video in a blog post.
-tags: [Example, Video]
+title: 人型机器人平衡控制相关
+published: 2025-08-01
+description: MPC与WBC算法
+tags: [Robot, balance]
 category: Examples
 draft: false
 ---
