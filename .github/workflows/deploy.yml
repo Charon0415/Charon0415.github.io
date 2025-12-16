@@ -1,3 +1,4 @@
+cat > .github/workflows/deploy.yml << 'EOF'
 name: Deploy Astro site to GitHub Pages
 
 on:
@@ -24,16 +25,16 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: latest
+          version: 10.26.0
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'pnpm'  # 使用 pnpm 缓存
+          cache: 'pnpm'
       
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
       
       - name: Build with Astro
         run: pnpm run build
@@ -53,3 +54,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+EOF
