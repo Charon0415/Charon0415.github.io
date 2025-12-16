@@ -26,6 +26,16 @@
   font-display: swap;
 }
 
+
+
+@font-face {
+  font-family: "songshu";
+  src: url("/assets/font/zt.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
