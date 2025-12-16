@@ -95,26 +95,18 @@ export const siteConfig: SiteConfig = {
 		src: {
 			desktop: [
 				"/assets/desktop-banner/1.webp",
-				"/assets/desktop-banner/2.webp",
-				"/assets/desktop-banner/3.webp",
-				"/assets/desktop-banner/4.webp",
-				"/assets/desktop-banner/5.webp",
-				"/assets/desktop-banner/6.webp",
+			
 			], // 桌面横幅图片
 			mobile: [
 				"/assets/mobile-banner/1.webp",
-				"/assets/mobile-banner/2.webp",
-				"/assets/mobile-banner/3.webp",
-				"/assets/mobile-banner/4.webp",
-				"/assets/mobile-banner/5.webp",
-				"/assets/mobile-banner/6.webp",
+			
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
 		position: "center", // 等同于 object-position，仅支持 'top', 'center', 'bottom'。默认为 'center'
 
 		carousel: {
-			enable: true, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
+			enable: false, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
 
 			interval: 5.0, // 轮播间隔时间（秒）
 		},
@@ -136,10 +128,10 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "个人博客", // 主页横幅主标题
+			title: "分享知识，技术与经验", // 主页横幅主标题
 
 			subtitle: [
-				"分享知识与经验",
+				"Charon的个人网站",
 				
 			],
 			typewriter: {
@@ -205,24 +197,16 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
 			"/assets/desktop-banner/1.webp",
-			"/assets/desktop-banner/2.webp",
-			"/assets/desktop-banner/3.webp",
-			"/assets/desktop-banner/4.webp",
-			"/assets/desktop-banner/5.webp",
-			"/assets/desktop-banner/6.webp",
+			
 		], // 桌面横幅图片
 		mobile: [
 			"/assets/mobile-banner/1.webp",
-			"/assets/mobile-banner/2.webp",
-			"/assets/mobile-banner/3.webp",
-			"/assets/mobile-banner/4.webp",
-			"/assets/mobile-banner/5.webp",
-			"/assets/mobile-banner/6.webp",
+	
 		], // 移动横幅图片
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
 	carousel: {
-		enable: true, // 启用轮播
+		enable: false, // 启用轮播
 		interval: 5, // 轮播间隔时间（秒）
 	},
 	zIndex: -1, // 层级，确保壁纸在背景层
@@ -254,7 +238,7 @@ export const navBarConfig: NavBarConfig = {
 				},
 				{
 					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
+					url: "https://gitee.com/charon0415",
 					external: true,
 					icon: "mdi:git",
 				},
@@ -342,26 +326,26 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Bilibli",
 			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/701864046",
+			url: "https://space.bilibili.com/405927049?spm_id_from=333.1007.0.0",
 		},
 		{
 			name: "Gitee",
 			icon: "mdi:git",
-			url: "https://gitee.com/matsuzakayuki",
+			url: "https://gitee.com/charon0415",
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/matsuzaka-yuki",
+			url: "https://github.com/Charon0415",
 		},
 		{
 			name: "Codeberg",
 			icon: "simple-icons:codeberg",
-			url: "https://codeberg.org",
+			url: "https://codeberg.org/Charon0415",
 		},
 		{
-			name: "Discord",
-			icon: "fa6-brands:discord",
+			name: "steam",
+			icon: "fa6-brands:steam",
 			url: "https://discord.gg/MqW6TcQtVM",
 		},
 	],
@@ -416,8 +400,8 @@ export const commentConfig: CommentConfig = {
 };
 
 export const announcementConfig: AnnouncementConfig = {
-	title: "Announcement", // 公告标题
-	content: "Welcome to my blog! This is a sample announcement.", // 公告内容
+	title: "公告", // 公告标题
+	content: "记录知识经验，资源分享，游戏攻略等", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
@@ -428,7 +412,7 @@ export const announcementConfig: AnnouncementConfig = {
 };
 
 export const musicPlayerConfig: MusicPlayerConfig = {
-	enable: true, // 启用音乐播放器功能
+	enable: false, // 启用音乐播放器功能
 	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
 	meting_api:
 		"https://www.bilibili.uno/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
@@ -661,7 +645,7 @@ export const widgetConfigs = {
 } as const;
 
 export const umamiConfig = {
-	enabled: false, // 是否显示Umami统计
+	enabled: true, // 是否显示Umami统计
 	apiKey: import.meta.env.UMAMI_API_KEY || "api_xxxxxxxx", // API密钥优先从环境变量读取，否则使用配置文件中的值
 	baseUrl: "https://api.umami.is", // Umami Cloud API地址
 	scripts: `
