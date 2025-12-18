@@ -131,7 +131,7 @@ export const siteConfig: SiteConfig = {
 			title: "分享知识，技术与经验", // 主页横幅主标题
 
 			subtitle: [
-				"Charon的个人网站",
+				"",
 				
 			],
 			typewriter: {
