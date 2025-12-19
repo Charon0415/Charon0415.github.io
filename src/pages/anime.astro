@@ -227,20 +227,20 @@ function getStatusInfo(status: string) {
 	}
 }
 
-// 计算统计数据
-// const stats = {
-// 	total: animeList.length,
-// 	watching: animeList.filter((anime) => anime.status === "watching").length,
-// 	completed: animeList.filter((anime) => anime.status === "completed").length,
-// 	avgRating: (() => {
-// 		const ratedAnime = animeList.filter((anime) => anime.rating > 0);
-// 		if (ratedAnime.length === 0) return "0.0";
-// 		return (
-// 			ratedAnime.reduce((sum, anime) => sum + anime.rating, 0) /
-// 			ratedAnime.length
-// 		).toFixed(1);
-// 	})(),
-// };
+//计算统计数据
+ const stats = {
+ 	total: animeList.length,
+ 	watching: animeList.filter((anime) => anime.status === "watching").length,
+ 	completed: animeList.filter((anime) => anime.status === "completed").length,
+ 	avgRating: (() => {
+ 		const ratedAnime = animeList.filter((anime) => anime.rating > 0);
+ 		if (ratedAnime.length === 0) return "0.0";
+		return (
+ 			ratedAnime.reduce((sum, anime) => sum + anime.rating, 0) /
+ 			ratedAnime.length
+		).toFixed(1);
+ 	})(),
+ };
 ---
 
 <MainGridLayout title={i18n(I18nKey.anime)} description={i18n(I18nKey.animeSubtitle)}>
