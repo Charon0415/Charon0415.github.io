@@ -26,7 +26,7 @@ export const zh_CN: Translation = {
 
 	[Key.comments]: "评论",
 	[Key.friends]: "友链",
-	[Key.friendsSubtitle]: "发现更多优秀网站",
+	[Key.friendsSubtitle]: "",
 	[Key.friendsSearchPlaceholder]: "搜索友链名称或描述...",
 	[Key.friendsFilterAll]: "全部",
 	[Key.friendsNoResults]: "未找到匹配的友链",
@@ -61,8 +61,8 @@ export const zh_CN: Translation = {
 	[Key.gallery]: "相册",
 
 	// 番剧页面
-	[Key.animeTitle]: "我的追番记录",
-	[Key.animeSubtitle]: "记录我的二次元之旅",
+	[Key.animeTitle]: "追番记录",
+	[Key.animeSubtitle]: "",
 	[Key.animeStatusWatching]: "在看",
 	[Key.animeStatusCompleted]: "看过",
 	[Key.animeStatusPlanned]: "想看",
@@ -76,7 +76,7 @@ export const zh_CN: Translation = {
 	[Key.animeEmptyLocal]: "请在 src/data/anime.ts 文件中添加番剧信息",
 
 	// 短文页面
-	[Key.diarySubtitle]: "随时随地，分享生活",
+	[Key.diarySubtitle]: "分享生活",
 	[Key.diaryCount]: "条短文",
 	[Key.diaryReply]: "回复",
 	[Key.diaryTips]: "只展示最近30条日记",
@@ -95,7 +95,7 @@ export const zh_CN: Translation = {
 
 	// 相册页面
 	[Key.albums]: "相册",
-	[Key.albumsSubtitle]: "记录生活中的美好瞬间",
+	[Key.albumsSubtitle]: "记录生活",
 	[Key.albumsEmpty]: "暂无内容",
 	[Key.albumsEmptyDesc]: "还没有创建任何相册，快去添加一些美好的回忆吧！",
 	[Key.albumsBackToList]: "返回相册",
@@ -104,7 +104,7 @@ export const zh_CN: Translation = {
 
 	// 设备页面
 	[Key.devices]: "我的设备",
-	[Key.devicesSubtitle]: "这里展示了我日常使用的各类设备",
+	[Key.devicesSubtitle]: "",
 
 	// 项目展示页面
 	[Key.projects]: "项目展示",

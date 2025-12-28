@@ -52,7 +52,7 @@ export const siteConfig: SiteConfig = {
 		// 顶栏标题文本
 		text: "Charon",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
-		icon: "assets/home/1.png",
+		icon: "assets/home/2.svg",
 	},
 
 	bangumi: {
@@ -114,7 +114,7 @@ export const siteConfig: SiteConfig = {
 		waves: {
 			enable: true, // 是否启用水波纹效果(这个功能比较吃性能)
 			performanceMode: true, // 性能模式：减少动画复杂度(性能提升40%)
-			mobileDisable: false, // 移动端禁用
+			mobileDisable: true, // 移动端禁用
 		},
 
 		// PicFlow API支持(智能图片API)
@@ -163,12 +163,12 @@ export const siteConfig: SiteConfig = {
 	showCoverInContent: true, // 在文章内容页显示文章封面
 	generateOgImages: false, // 启用生成OpenGraph图片功能,注意开启后要渲染很长时间，不建议本地调试的时候开启
 	favicon: [
-		// 留空以使用默认 favicon
-		// {
-		//   src: '/favicon/icon.png',    // 图标文件路径
-		//   theme: 'light',              // 可选，指定主题 'light' | 'dark'
-		//   sizes: '32x32',              // 可选，图标大小
-		// }
+		 // 留空以使用默认 favicon
+		 {
+		   src: '/favicon/2.svg',    // 图标文件路径
+		   theme: 'light',              // 可选，指定主题 'light' | 'dark'
+		   sizes: '32x32',              // 可选，图标大小
+		 }
 	],
 
 	// 字体配置
@@ -422,8 +422,8 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 };
 
 export const footerConfig: FooterConfig = {
-	enable: false, // 是否启用Footer HTML注入功能
-	customHtml: "", // HTML格式的自定义页脚信息，例如备案号等，默认留空
+	enable: true, // 是否启用Footer HTML注入功能
+	customHtml: "One & Only", // HTML格式的自定义页脚信息，例如备案号等，默认留空
 	// 也可以直接编辑 FooterConfig.html 文件来添加备案号等自定义内容
 	// 注意：若 customHtml 不为空，则使用 customHtml 中的内容；若 customHtml 留空，则使用 FooterConfig.html 文件中的内容
 	// FooterConfig.html 可能会在未来的某个版本弃用
@@ -611,13 +611,13 @@ export const sakuraConfig: SakuraConfig = {
 
 // Pio 看板娘配置
 export const pioConfig: import("./types/config").PioConfig = {
-	enable: true, // 启用看板娘
+	enable: false, // 启用看板娘
 	models: ["/pio/models/pio/model.json"], // 默认模型路径
 	position: "left", // 默认位置在右侧
 	width: 280, // 默认宽度 
 	height: 250, // 默认高度
 	mode: "draggable", // 默认为可拖拽模式
-	hiddenOnMobile: false, // 默认在移动设备上隐藏
+	hiddenOnMobile: true, // 默认在移动设备上隐藏
 	dialog: {
 		welcome: "Welcome to Mizuki Website!", // 欢迎词
 		touch: [
