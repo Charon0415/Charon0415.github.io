@@ -95,7 +95,7 @@ export const siteConfig: SiteConfig = {
 		src: {
 			desktop: [
 				"/assets/desktop-banner/1.webp",
-			
+			        
 			], // 桌面横幅图片
 			mobile: [
 				"/assets/mobile-banner/1.webp",
